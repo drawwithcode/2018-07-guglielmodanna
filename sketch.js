@@ -81,7 +81,7 @@ function draw() {
       height);
   }
 
-  if (pleasureLevel.velocity.y < -1 || pleasureLevel.position.y < 0) {
+  if (pleasureLevel.velocity.y < -0.5 || pleasureLevel.position.y < 0) {
     if (portraitMode) {
       image(blush,
         0,
@@ -137,7 +137,7 @@ function draw() {
     text("Original drawings by Milo Manara", width/2, height-22);
   }
 
-  if (pleasureLevel.velocity.y < -1 || pleasureLevel.position.y < 0) {
+  if (pleasureLevel.velocity.y < -0.1 || pleasureLevel.position.y < 0) {
     console.log(started);
     started = true;
   }
